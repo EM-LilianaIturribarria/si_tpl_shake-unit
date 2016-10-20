@@ -1,0 +1,19 @@
+<section 
+  class="gallery">
+  
+  <div class="gallery__content">
+    <p class="gallery__text" ng-if="!gallery.initialized">
+      Click <button class="btn btn-primary" ng-click="gallery.init()">here</button> to start the experience!
+    </p>
+    <p 
+      class="gallery__text animated fadeIn" ng-if="gallery.initialized"
+    >SHAKE your phone to change the color</p>
+    <!--
+    <button 
+      class="btn btn-secondary animated fadeIn" 
+      ng-click="gallery.playSound()"  
+      ng-if="gallery.initialized"
+    >Play sound</button>
+    -->
+  </div>
+</section>

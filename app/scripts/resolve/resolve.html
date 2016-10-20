@@ -1,0 +1,16 @@
+<section 
+  class="resolve"
+  ng-class="{'resolve--wbg':!resolve.show}">
+  <si-sb-video
+    video="resolve.video"
+    api="resolve.api"
+    ng-if="resolve.show"
+  ></si-sb-video>
+  <button 
+    class="resolve__playagain"
+    ng-if="!resolve.show"
+    ng-click="resolve.playVideo()"
+    si-track
+    ga="Play again button"
+  >Watch Video Again</button>
+</section>

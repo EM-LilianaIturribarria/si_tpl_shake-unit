@@ -1,0 +1,17 @@
+<div class="sb-video">
+  <div
+    id="{{ video.widget }}_{{ video.id }}"
+    class="sb-video__player"
+  ></div>
+  <ul class="sb-video__thumbnails" ng-if="video.thumbnails">
+    <li
+      ng-repeat="thumb in video.thumbs"
+      class="sb-video__thumbnails__thumb"
+      ng-class="{ 'sb-video__thumbnails__thumb--active' : (activeThumb === $index) }"
+      ng-click="onThumbClicked($index)"
+    >
+      <div class="sb-video__thumbnails__thumb__mask"></div>
+      <img ng-src="{{ thumb.snapshot }}">
+    </li>
+  </ul>
+</div>

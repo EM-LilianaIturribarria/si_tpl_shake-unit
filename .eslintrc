@@ -1,0 +1,24 @@
+{
+  "extends": "eslint:recommended",
+  // "plugins": ["angular"],
+  "rules" : {
+    "no-unused-vars": [0],
+    "no-console": [0]
+  },
+  "env": {
+    "browser": true,
+    "jasmine": true
+  },
+  "globals": {
+    "angular": true,
+    "module": true,
+    "inject": true,
+    "ga": true,
+    "_": true,
+    "$": true,
+    "OriginExternalAPI": true,
+    "$sbPlayer": true,
+    "Shake": true,
+    "ion": true
+  }
+}
